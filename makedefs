@@ -1,0 +1,10 @@
+#
+# The base directory for mips gcc
+#
+
+STAGING_DIR=/home/thunder/repo.git/vocore/VoCoreOrig/staging_dir/
+ROOT=/home/thunder/repo.git/vocore/VoCoreOrig/staging_dir/toolchain-mipsel_24kec+dsp_gcc-4.8-linaro_uClibc-0.9.33.2/bin/
+CROSS_COMPILE ?= $(ROOT)/mipsel-openwrt-linux-uclibc-
+CC = $(CROSS_COMPILE)gcc
+CCLD = $(CC)
+
